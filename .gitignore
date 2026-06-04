@@ -1,0 +1,13 @@
+# Entornos virtuales y python embebido
+.venv/
+python_embed/
+
+# Carpetas de notas locales
+varios/
+
+# Archivos temporales de código
+__pycache__/
+*.pyc
+
+# Automatizaciones de Windows locales
+*.bat
