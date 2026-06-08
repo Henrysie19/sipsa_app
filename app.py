@@ -101,7 +101,7 @@ except Exception as exc:
 with st.sidebar:
     # Usamos la ruta local de tu archivo
     st.image(
-        r"C:\Users\ASUS\Documents\DOCS\Henry\cun_esp_analisis_de_datos\proyecto 2\sipsa_app\ai-assistant.gif",
+        "ai-assistant.gif",
         width=100
     )
     st.write("Modelo Predictivo") # Opcional: un texto pequeño debajo
