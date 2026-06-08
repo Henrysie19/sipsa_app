@@ -1,7 +1,39 @@
-# 🌾 SIPSA · Sistema Predictivo de Precios Mayoristas Agrícolas
+# 🌾 SIPSA Predictor: Inteligencia de Datos para el Agro Colombiano
 
-Proyecto de Especialización — Colombia  
-Modelos ARIMA / SARIMA con validación académica y compuerta de confianza.
+## 🖼️ Demo
+(
+
+https://github.com/user-attachments/assets/ed1c34cb-373f-4549-83a7-c037d24c8f3c
+
+) 
+
+
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+
+### 🚀 Optimización de la toma de decisiones en mercados mayoristas mediante analítica predictiva.
+
+## 📝 Contexto y Objetivo
+En el sector agropecuario colombiano, la volatilidad de los precios mayoristas (datos SIPSA-DANE) genera una alta incertidumbre. Este proyecto nace para cerrar la brecha de información entre productores y comercializadores. 
+
+**El objetivo:** Proporcionar una herramienta técnica que no solo visualice datos históricos, sino que proyecte tendencias a corto plazo (3 meses) utilizando modelos robustos de series de tiempo, permitiendo una planificación estratégica basada en datos y no en suposiciones.
+
+---
+
+## 🛠️ Características Principales
+- **Motor Adaptativo:** Selección automática entre modelos **ARIMA y SARIMA** según la densidad y estacionalidad de los datos.
+- **Compuerta de Confianza:** El sistema evalúa su propia precisión (MAPE). Si la fiabilidad es menor al 80%, el sistema bloquea los consejos comerciales para proteger financieramente al usuario.
+- **Análisis Regional:** Consultas dinámicas cruzando +600,000 registros por producto y central de abastos específica.
+- **Interfaz Intuitiva:** Despliegue profesional mediante Streamlit para una experiencia de usuario fluida.
+
+---
+
+## 🧠 Arquitectura y Lógica
+El sistema sigue un pipeline de ingeniería de datos riguroso:
+
+1. **ETL:** Limpieza y normalización de datos del SIPSA (2013-2025).
+2. **Validación Académica:** Backtesting dinámico que divide la serie en entrenamiento y prueba.
+3. **Métricas Técnicas:** Cálculo de MAE, RMSE y MAPE para cada consulta individual.
+4. **Dashboard:** Traducción de métricas estadísticas a "Consejos para el Productor/Consumidor".
 
 ---
 
@@ -119,3 +151,14 @@ Gráfica + Métricas + Consejos
   evitando errores en mercados con pocos datos.
 - `auto_arima` selecciona automáticamente entre **ARIMA** (productos con tendencia de
   costos, ej. procesados) y **SARIMA** (productos con ciclos de cosecha, ej. papa, hortalizas).
+
+  ---
+
+## 🔬 Rigor Académico
+- **Precisión:** Definida como `100% − MAPE`.
+- **Detección de Estacionalidad:** Uso de `auto_arima` con criterios de información de Akaike (AIC).
+- **Tratamiento de Datos:** Imputación técnica de vacíos mediante *forward-fill* para mantener la integridad cronológica.
+
+---
+
+✉️ **Contacto:** Henry Sierra - linkedin.com/in/henry-sierra
